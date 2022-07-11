@@ -1,0 +1,320 @@
+ 
+// ============= JavaScript ===========
+
+//https://learn.javascript.ru
+
+
+// =========  Variables  Переменные ============
+// https://learn.javascript.ru/variables
+
+// let
+// const
+
+// ====== Присваивание переменной значения, переприсваивание.
+
+// let first = 1;
+// let second = 2;
+// console.log(first);
+// console.log(second);
+// console.log(first, second);
+
+// first = 7;
+// console.log(first);
+
+// const PI = 3.14;
+// PI = 7;
+
+// var
+
+// var three = "third";
+// console.log(three);
+
+
+
+// console.log();  cl + tab
+
+
+// ========== Names of variables
+
+// Обязательные правила:
+// 1.  Имя переменной должно содержать только буквы, 
+//     цифры или символы $ и _. 
+// 2.  Первый символ не должен быть цифрой. 
+// 3.  Нельзя использовать зарезервированные слова (let, var...)
+
+// Необязательные правила, но общепринятые:
+//    Значимое имя
+//    camelCase :        userFirstName
+//    english alphabet
+
+
+// =========== Типы данных =======
+
+// string
+// number
+// boolean
+
+//       null
+//       undefined
+//              bigint
+//              symbol
+//       object
+
+
+// typeof(variable)
+
+// let num = 1.234;
+// let str = "hello";
+//  console.log(typeof(num));
+//  console.log(typeof str);
+// console.log(str);
+// console.log(num);
+
+// ============= string ======
+// string не разделяет отдельные символы и слова
+// Строка (string) в JavaScript должна быть заключена в кавычки.
+
+// let str2 = "abc";
+// let str3 = 'defg';
+// let str4 = `hij`;
+
+// console.log(str2, str3, str4);
+
+// === string concatenation, + 
+
+// let concat = str2 + str3 + str4;
+// let concat2 = str2 + " " + str3 + " " + str4;
+
+// console.log(concat, concat2);
+
+// let name = 'Liza';
+// console.log('My name is ' + name);
+
+// `${name}`
+
+// console.log(`My name is ${str2 + str3}`);
+
+
+// ===== длина строки, индекс буквы
+
+
+// let phrase = "This world is beautiful!";
+// let space = "";
+
+// phrase.length
+
+// console.log(phrase.length);
+// console.log(space.length);
+
+// index:    
+// "This world is beautiful!"
+//  0123456789 ...         23
+
+// console.log(phrase[15]);
+// console.log(phrase[-5]);
+
+
+// string.toLowerCase();
+// console.log(phrase.toLowerCase());
+// string.toUpperCase();
+// console.log(phrase.toUpperCase());
+
+
+
+// ============= number ======
+// Числовой тип данных (number) представляет как целочисленные значения,
+//  так и числа с плавающей точкой.
+
+
+// + -  *  /  **  %
+
+// let a = 5;
+// let b = 7;
+// let c = a ** b;
+
+// console.log(c);
+
+// let d = a % b;    // 5 / 7 = 0,  ostatok 5 
+// let e = b % a;   // 7 / 5 = 1,  ostatok 2
+
+// console.log(d, e);
+
+//   %  часто используется для определения четное / нечетное
+
+// console.log(a % 2);
+// let f = 16;
+// console.log(f % 2); 
+
+// console.log(5 - 7 + 2);
+// console.log(5 - (7 + 2));
+
+// console.log(a / 0);
+// console.log(typeof(a / 0));
+
+// ++  -- 
+
+// ++a;
+// console.log(a);
+
+// b--;
+// console.log(b);
+
+
+// ----   NaN    ->   Not a Number
+// NaN означает вычислительную ошибку. Это результат неправильной или 
+// неопределённой математической операции
+
+// let str7 = "abc";
+// let dif = a - str7
+// console.log(dif);
+
+// console.log(typeof NaN);
+
+// ============= boolean =====
+
+// let bool = true;
+// let bool2 = false;
+
+// console.log(bool, bool2);
+// console.log(typeof bool);
+
+// ====== сравнение переменных ===
+
+// операторы сравнения ==   ===  !=  !==   >  <   >=  <=  
+
+// bool = (a === 5)
+// console.log(bool);
+
+// bool = (a === "5")
+// console.log(bool);
+
+// ============= Поменять тип данных ==
+
+// --- в string:   '' + num; String(num);
+
+// --- в number:  +str ; Number(str)
+
+// let k = "345";
+// console.log(+k);
+
+
+
+// let str8 = "8";
+// let summa = a ** str8
+// console.log(summa);
+
+
+
+// Задачи
+
+// 1. Создайте переменные с именами a, b и с, присвойте 
+// переменным любые цифровый значения (целые или дробные).  
+// С помощью переприсваивания переменных увеличьте a на 2, 
+// уменьшите b на 4 и разделите с на 6. Выведите a, b, c в консоль.
+
+
+
+
+// 2. Объявить переменные для товаров в продуктовом магазине:
+// Вес апельсинов в кг
+// Цена апельсинов за кг
+// Вес яблок, цена за кг
+// Количество пачек печенья, цена за пачку
+// Общая стоимость товара
+// Присвоить всем переменным значения, подсчитать 
+// общую стоимость покупки, Вывести в консоль.
+
+//3.  fix the code
+
+//A.Print the result of the sum
+// let a = 1,
+// lat b = 2,
+// const result = 0
+// result = a + b;
+// console.log('result');
+
+//B.Print the result of string concatination
+// let 1name = Hello;
+// let 2name = 'World':
+// let str = 1name + name;
+// console.log(str);
+
+//C.Print the result of multiplication 
+// let a = 4;
+// let b 2;
+// let multiple = a x b;
+// console.log(multiple);
+
+// 4.
+// Объявить переменную, значением которой будет ваше имя. 
+// Объявить переменную со значением Hello World.
+// Сконструировать из них фразу:
+// Hello World! My name is <имя>.
+// Вывести ее в консоль 
+
+// 5. Найти остаток от деления на 5 для чисел: 67; 132; -9; 3
+// Вывести результат в консоль в виде фраз 
+// «остаток от деления 67 на 5 равен <ответ>»
+
+
+
+
+
+//////=============== Codewars ==============
+
+// https://www.codewars.com/kata/56dec885c54a926dcd001095   // Opposite number
+// https://www.codewars.com/kata/50ee6b0bdeab583673000025   //    variables
+// https://www.codewars.com/kata/55a70521798b14d4750000a4    //    Add name
+// https://www.codewars.com/kata/5859d3325a8a0747180000c6    //   Hallo!
+// https://www.codewars.com/kata/5265326f5fda8eb1160004c8  // num to Str
+// https://www.codewars.com/kata/544675c6f971f7399a000e79  // str to Num
+// https://www.codewars.com/kata/50654ddff44f800200000004  // fix Multiply
+
+
+
+
+
+
+
+
+//A
+let a1 = 1;
+let b2 = 2;
+result = a1 + b2;
+console.log(result);
+
+// B
+let name1 = "Hello";
+let name2 = "World";
+let str = name1 + " " + name2; // пробел с конкотенацией
+console.log(str);
+
+//C.Print the result of multiplication 
+let a = 4;
+let b = 2;
+let multiple = a * b;
+console.log(multiple);
+
+// 4.
+// Объявить переменную, значением которой будет ваше имя. 
+// Объявить переменную со значением Hello World.
+// Сконструировать из них фразу:
+// Hello World! My name is <имя>.
+// Вывести ее в консоль 
+
+let MyName = " Aleksei";
+let HelloWorld = "Hello" +" " + "World" + "!";
+console.log(HelloWorld + " My name is" + MyName)
+
+// 5. Найти остаток от деления на 5 для чисел: 67; 132; -9; 3
+// Вывести результат в консоль в виде фраз 
+// «остаток от деления 67 на 5 равен <ответ>»
+
+let q = 67 % 5;
+let w = 132 % 5;
+let e = -9 % 5;
+let r = 3 % 5;
+console.log("остаток от деления 67 на  + 5 = " +q);
+console.log("остаток от деления 132 на  + 5 = " +w);
+console.log("остаток от деления -9  на  5 = " + e);
+console.log("остаток от деления 3 на 5 = " + r);
